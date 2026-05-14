@@ -1,4 +1,4 @@
-const Shipment = require("../models/Shipment");
+const Shipment = require("../models/shipment");
 
 const express = require("express");
 
