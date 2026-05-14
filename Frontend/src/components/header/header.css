@@ -1,0 +1,91 @@
+.topHeader {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  padding: 14px 0;
+  background: rgba(3, 10, 25, 0.55);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.headerRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logoMark {
+  width: 46px;
+  height: 46px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.14);
+  display: grid;
+  place-items: center;
+  color: #47b6ff;
+  font-size: 20px;
+  box-shadow: 0 18px 45px rgba(0,0,0,0.35);
+}
+
+.brandText { line-height: 1.05; }
+.brandName {
+  font-weight: 1000;
+  letter-spacing: 0.2px;
+  color: rgba(220,245,255,0.95);
+  font-size: 13px;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.navLink {
+  font-weight: 900;
+  font-size: 12px;
+  color: rgba(235,245,255,0.88);
+  padding: 8px 10px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  transition: 0.15s ease;
+  letter-spacing: 0.4px;
+}
+
+.navLink:hover {
+  background: rgba(255,255,255,0.06);
+  border-color: rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.98);
+}
+
+.phoneBox {
+  min-width: 210px;
+  text-align: right;
+}
+
+.phoneLine {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 14px;
+  padding: 10px 12px;
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(0,0,0,0.18);
+}
+
+.phoneIcon { color: #00ffcc; font-weight: 900; }
+.phoneText { font-weight: 1000; font-size: 12px; color: rgba(230,242,255,0.95); }
+
+@media (max-width: 900px) {
+  .phoneBox { display: none; }
+  .navLinks { justify-content: flex-end; }
+}
