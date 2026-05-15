@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-import Header from "../../components/Header.jsx";
-import TrackingPanel from "../../components/TrackingPanels/TrackingPanel.jsx";
+import Header from "../../components/header/Header.jsx";
+import TrackingPanel from "../../components/trackingpanels/TrackingPanel.jsx";
 
 import "./home.css";
 
