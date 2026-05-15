@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Header from "../../components/Header/Header.jsx";
 import TrackingPanel from "../../components/header/trackingpanels/Trackingpanel.jsx";
 
-import "./Home.css";
+import "./home.css";
 
 export default function Home() {
   return (
