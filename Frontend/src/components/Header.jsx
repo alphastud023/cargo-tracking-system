@@ -1,5 +1,5 @@
 import { FaGlobe } from "react-icons/fa";
-import "./header.css";
+import "./Header.css";
 
 export default function Header() {
   return (
