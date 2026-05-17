@@ -196,9 +196,15 @@ export default function Home() {
             </div>
 
             <div className="contactLine">
-              <div className="contactBullet" aria-hidden="true">✉️</div>
-              <div>kevin.ancout@londonfreight.co.uk</div>
-            </div>
+  <div className="contactBullet" aria-hidden="true">✉️</div>
+
+  <a
+    href="mailto:londonfreightlogistics@gmail.com"
+    className="contactEmail"
+  >
+    londonfreightlogistics@gmail.com
+  </a>
+</div>
 
             {/* Tracking inside contact card */}
             <TrackingPanel />

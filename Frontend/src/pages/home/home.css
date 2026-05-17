@@ -324,3 +324,14 @@
   .bottomGrid { grid-template-columns: 1fr; }
   .featuresRow { grid-template-columns: 1fr; }
 }
+
+.contactEmail{
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s ease;
+  font-weight: 500;
+}
+
+.contactEmail:hover{
+  color: #20a4ff;
+}
