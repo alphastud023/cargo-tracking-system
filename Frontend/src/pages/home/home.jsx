@@ -199,10 +199,10 @@ export default function Home() {
   <div className="contactBullet" aria-hidden="true">✉️</div>
 
   <a
-    href="mailto:londonfreightlogistics@gmail.com"
+    href="mailto:info.londonfreightlogistics@gmail.com"
     className="contactEmail"
   >
-    londonfreightlogistics@gmail.com
+    info.londonfreightlogistics@gmail.com
   </a>
 </div>
 
