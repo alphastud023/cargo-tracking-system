@@ -6,6 +6,7 @@ import TrackingPanel from "../../components/trackingpanels/TrackingPanel.jsx";
 
 import "./home.css";
 
+
 export default function Home() {
   return (
     <div id="home">
