@@ -1,7 +1,12 @@
-import { FaGlobe } from "react-icons/fa";
+import { useState } from "react";
+import { FaGlobe, FaBars, FaTimes } from "react-icons/fa";
+
 import "./Header.css";
 
 export default function Header() {
+
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <header className="topHeader">
       <div className="container headerRow">
@@ -15,7 +20,16 @@ export default function Header() {
           </div>
         </div>
 
-        <nav className="navLinks" aria-label="Primary">
+        <button
+          className="menuToggle"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-expanded={menuOpen}
+          aria-label="Toggle navigation"
+        >
+          {menuOpen ? <FaTimes /> : <FaBars />}
+        </button>
+
+        <nav className={`navLinks ${menuOpen ? "active" : ""}`} aria-label="Primary">
           <a href="#home" className="navLink">HOME</a>
           <a href="#services" className="navLink">SERVICES</a>
           <a href="#solutions" className="navLink">SOLUTIONS</a>
